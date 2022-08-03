@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(230, 125, 34, 0.5);
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-image:linear-gradient(to right,rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/charlesdeluvio-_4K7BwaHUGc-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 75rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 5rem 15rem;
+  column-gap: 3rem;
+  overflow: hidden;
+}
+
+.img-container-loading {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(0,0,0,0.17);
+  transition: all 4s;
+}
+
+.img-container-static {
+  width: 100%;
+  height: 75%;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem rgb(0, 0, 0, 0.17);
+  transition: all 0.4s;
+}
+
+.img-container-flow-1 {
+  transform: translateY(70rem);
+}
+.img-container-flow-2 {
+  transform: translateY(280rem);
+}
+.img-container-flow-3 {
+  transform: translateY(140rem);
+}
+.img-container-flow-4 {
+  transform: translateY(530rem);
+}
+
+.img-container:hover,.img-container:active {
+  cursor: pointer;
+  transform: translateY(-1.2rem);
+}
+
+.imge {
+  width: 100%;
+  height: 100%;
+}
+
+.img-container--2, .img-container--4 {
+  align-self: flex-end;
+}
+
+.cards {
+  padding: 5rem 10rem;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 8rem;
+  row-gap: 4rem;
+}
+
+.card {
+  width: 100%;
+  height: 40rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem rgb(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.card-img-container {
+  width: 100%;
+  height: 75%;
+}
